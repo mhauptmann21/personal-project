@@ -168,27 +168,37 @@ section h2::after {
 }
 
 .social-links {
+    margin: 2rem auto;
     font-size: 2.25rem;
-    margin: 1rem 0;
+}
+.social-icons {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0.5rem auto;
+    flex-wrap: wrap; /* keeps things responsive */
+    width: 100%;
+    max-width: 600px; /* Optional: control how wide they spread */
 }
 
-social-links a {
-    padding: 0;
-    margin: 0 0.75rem;
+.social-links a {
+    font: 100;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-weight: 400;
 }
 
 .social-links a i {
-    transition: transform 0.3s, color 0.3s;
+    color: #1b4965;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover i {
     color: #bee9e8;
     transform: scale(1.2);
-}
-
-.social-links i {
-    color: #1b4965;
-    font-weight: 500;
 }
 
 #projects-section {
@@ -324,13 +334,69 @@ social-links a {
     color: #bee9e8;
 }
 
-footer {
-    background-color: #62b6cb;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.875rem;
+
+
+/* Leave Message Section */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cae9ff;
+    border-radius: 4px;
+    resize: vertical;
 }
+
+label {
+    width: 100%;
+    display: inline-block;
+    color: #1b4965;
+    font-weight: 500;
+    font-size: large;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 5px;
+
+}
+
+input[type=submit] {
+    background-color: #1b4965;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #62b6cb;
+}
+
+.container {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #e3f2fd;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: -25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.row::after {
+    content: "";
+    display: table; /* Clear floats after the columns */
+    clear: both;
+}
+
 
 /* Cards Swiper */
 .swiper {
@@ -349,7 +415,41 @@ footer {
     width: 272px;
     height: 375.75px;
 }
+footer {
+  background-color: #bee9e8;
+  color: #1b4965;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+}
 
+.footer-links {
+    padding-top: 2rem;
+  display: flex;
+  justify-content: space-evenly; /* or space-between */
+  width: 100%;
+  max-width: 600px; /* Optional, controls how far they spread */
+  margin: 0 auto 0.5rem auto;
+  flex-wrap: wrap; /* keeps things responsive */
+}
+
+.footer-links a {
+  color: #1b4965;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: larger;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    padding-top: 2rem;
+    text-align: center;
+}
 
 
 @media (min-width: 1690px) {
@@ -455,5 +555,10 @@ footer {
 
     #leave-message-section {
         padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 }

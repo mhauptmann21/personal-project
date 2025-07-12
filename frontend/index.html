@@ -42,18 +42,19 @@
       </p>
     </div>
     <div class="social-links">
-        
         <h2>Connect with Me</h2>
         <div class="divider"></div>
-        <a href="https://www.instagram.com/madisonhauptmann/" target="_blank">
-            <i class="fa-brands fa-instagram" style="font-size:48px;"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/madison-hauptmann/" target="_blank">
-            <i class="fa-brands fa-linkedin" style="font-size:48px;"></i>
-        </a>
-        <a href="https://github.com/mhauptmann21" target="_blank">
-            <i class="fa-brands fa-github" style="font-size:48px;"></i>
-        </a>
+        <div class="social-icons"
+            <a href="https://www.instagram.com/madisonhauptmann/" target="_blank">
+                <i class="fa-brands fa-instagram" style="font-size:48px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/madison-hauptmann/" target="_blank">
+                <i class="fa-brands fa-linkedin" style="font-size:48px;"></i>
+            </a>
+            <a href="https://github.com/mhauptmann21" target="_blank">
+                <i class="fa-brands fa-github" style="font-size:48px;"></i>
+            </a>
+    </div>
     </div>
   </section>
   <div class="divider"></div>
@@ -145,13 +146,54 @@
     </section>
     <div class=""divider"></div>
     <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me!</h2>
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+    <p>OR</p>
     <p>Email me at: <a href="mailto:madisonhauptmann@gmaill.com">madisonhauptmann@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Madison Hauptmann. All rights reserved.</p>
-    <p>Last updated: July 2025</p>
+    <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 Madison Hauptmann. All rights reserved.</p>
+        <p>Last updated: July 2025</p>
+    </div>
   </footer>
 </body>
 </html>
